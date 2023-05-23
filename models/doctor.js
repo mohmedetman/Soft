@@ -1,13 +1,10 @@
 import { Schema,model } from "mongoose";
-const student = new Schema({
+const doctor = new Schema({
     name : {
         type:String,
         required:true
     },
-    email :{
-        type:String,
-        required:true,
-    }
+
 
     password :{
         type:String,
@@ -15,10 +12,10 @@ const student = new Schema({
 
 
     }
-    material :{
+    subject :{
             type:String,
             required:true,
     } 
-
+    
 });
-export default model('student',department);
+export default model('doctor',department);
